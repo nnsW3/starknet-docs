@@ -54,7 +54,7 @@ without making them unnecessarily long.
 * Use only one level 1 heading (`=`) in any file.
 * For subsequent heading levels, avoid using a single heading for each level. For example, if you have one heading 2 you should add another heading 2.
 +
-Headings generally separate ideas on a page, so usually a heading indicates a new idea, which logically presupposed a heading for the first idea. Sometimes implementing this guideline requires restructuring the page.
+Headings generally separate ideas on a page, so usually a heading indicates a new idea, which logically presupposes a heading for the first idea. Sometimes implementing this guideline requires restructuring the page.
 
 .Example of what to do
 
@@ -82,7 +82,7 @@ Headings generally separate ideas on a page, so usually a heading indicates a ne
 If you want to link to a third-party website:
 
 * Do not create a hyperlink.
-* Use the site top level URL as text.
+* Use the site's top-level URL as text.
 * Provide the title of the page to search for on the site.
 
 .Example
@@ -138,4 +138,4 @@ If a term doesn't appear here, refer to the following guides, in order:
 
 The default is to use the full word _transaction_ in normal text. You can use _tx_ as an abbreviation for the word _transaction_ if it improves readability.
 
-*Reasoning:* This abbreviation is well known in the industry.
+*Reasoning:* This abbreviation is well-known in the industry.
