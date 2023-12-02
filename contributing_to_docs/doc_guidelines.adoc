@@ -49,7 +49,7 @@ toc::[]
 * The end of each file should have an empty line.
 // * Do *not* hard wrap lines at 80 characters (or at any other length).
 // +
-// It is not necessary to update existing content to unwrap lines, but you can remove existing hard wrapping from any lines that you are currently working in.
+// It is not necessary to update existing content to unwrap lines, but you can remove existing hard wrapping from any lines that you are currently working on.
 
 [id="topic-file-metadata"]
 == Topic metadata
@@ -63,7 +63,7 @@ Every topic should be placed in a logical directory under `/components/StarkNet/
 
 <1> A topic anchor with `{context}` that must be lowercase and must match the topic's file name.
 <2> Human readable title. To ensure consistency in the results of the
-leveloffset values in include statements, you must use a level one heading
+level offset values in included statements, you must use a level one heading
 ( = ) for the topic title.
 
 Example:
@@ -119,7 +119,7 @@ Every text snippet should be placed in the `partials` folder for the topic in wh
 
 [NOTE]
 ====
-An anchor ID and human readable title are not required metadata. This type of component is text only and not intended to be published or cross referenced on its own. See <<writing-text-snippets>>.
+An anchor ID and human-readable title are not required metadata. This type of component is text only and not intended to be published or cross-referenced on its own. See <<writing-text-snippets>>.
 ====
 
 .Example:
@@ -239,7 +239,7 @@ The following is an example of an anchor ID for a topic file title:
 = Sending notifications to external systems
 ----
 
-The following is an example of an anchor ID for a second level (`==`) heading:
+The following is an example of an anchor ID for a second-level (`==`) heading:
 
 ----
 [id="deployment-scaling-benefits_{context}"]
@@ -268,7 +268,7 @@ link:https://redhat-documentation.github.io/modular-docs/#creating-procedure-mod
 == Writing text snippets
 A _text snippet_ is an optional component that lets you reuse content in multiple topics. Text snippets are not a substitute for topics but instead are a more granular form of content reuse.
 
-While a topic is content that a reader can understand on its own (like an article) or as part of a larger body of work (like a guide), a text snippet is not self-contained and is not intended to be published or cross referenced on its own.
+While a topic is content that a reader can understand on its own (like an article) or as part of a larger body of work (like a guide), a text snippet is not self-contained and is not intended to be published or cross-referenced on its own.
 
 Examples include the following:
 
@@ -337,7 +337,7 @@ Do not include link:https://docs.asciidoctor.org/asciidoc/latest/directives/incl
 === Using AsciiDoc callouts in the source code
 
 You can use AsciiDoc callouts in the source code file.
-Comment out the callout in the YAML file to ensure that file can still be parsed as valid YAML.
+Comment out the callout in the YAML file to ensure that the file can still be parsed as valid YAML.
 Asciidoctor recognizes the commented callout and renders it correctly in the output.
 For example:
 
@@ -425,7 +425,7 @@ For all of the system blocks including table delimiters, use four characters. Fo
 
 [NOTE]
 ====
-You can use backticks or other markup in the title for a block, such as a code block `.Example` or a table `.Description` title.
+You can use backticks or other markups in the title for a block, such as a code block `.Example` or a table `.Description` title.
 ====
 
 === Code blocks, command syntax, and example output
@@ -484,7 +484,7 @@ The following guidelines go into more detail about specific requirements and
 recommendations when using code blocks:
 
 * If a step in a procedure is to run a command, make sure that the step
-text includes an explicit instruction to "run" or "enter" the command. In most cases,
+the text includes an explicit instruction to "run" or "enter" the command. In most cases,
 use one of the following patterns to introduce the code block:
 
 ** <Step description> by running the following command:
@@ -604,7 +604,7 @@ $ oc autoscale <object_type>/<name> \// <1>
 <1> Specify the type and name of the object to autoscale.
 <2> Optional: Specify the minimum number of replicas when scaling down.
 <3> Specify the maximum number of replicas when scaling up.
-<4> Specify the target average CPU utilization over all the pods, represented as a percent of requested CPU.
+<4> Specify the target average CPU utilization over all the pods, represented as a percent of the requested CPU.
 ....
 
 * Separate a command and its related example output into individual code blocks.
@@ -777,7 +777,7 @@ Previously, the AWS Terraform provider that the installation program used occasi
 When applying changes to module.bootstrap.aws_s3_bucket.ignition, provider level=error msg="\"aws\" produced an unexpected new value for was present, but now absent.
 ----
 
-Now, the installation program uses different AWS Terraform provider code, which now robustly handles S3 eventual consistency, and the installer-provisioned AWS cluster installation does not fail with that error message.
+Now, the installation program uses a different AWS Terraform provider code, which now robustly handles S3 eventual consistency, and the installer-provisioned AWS cluster installation does not fail with that error message.
 ....
 
 This renders as:
@@ -788,7 +788,7 @@ This renders as:
 > When applying changes to module.bootstrap.aws_s3_bucket.ignition, provider level=error msg="\"aws\" produced an unexpected new value for was present, but now absent.
 > ----
 >
-> Now, the installation program uses different AWS Terraform provider code, which now robustly handles S3 eventual consistency, and the installer-provisioned AWS cluster installation does not fail with that error message.
+> Now, the installation program uses a different AWS Terraform provider code, which now robustly handles S3 eventual consistency, and the installer-provisioned AWS cluster installation does not fail with that error message.
 
 NOTE: Always refer to a message with the type of message it is, followed by the word _message_. For example, refer to an error message as an _error message_, and not simply as an _error_.
 
@@ -844,7 +844,7 @@ If you reference a footnote from only a single location, use the following synta
 footnote:[This is the footnote text.]
 ....
 
-If you reference a footnote from multiple locations, set an attribute with the footnote text. As a consequence, this will duplicate the footnote text at bottom of the page.
+If you reference a footnote from multiple locations, set an attribute with the footnote text. As a consequence, this will duplicate the footnote text at the bottom of the page.
 
 .Footnote with text set by an attribute
 ....
@@ -956,7 +956,7 @@ The following guidelines apply to all "Additional resources" sections:
 
 * Avoid including paragraphs in the section. Use an unordered list.
 * The links and xrefs in the unordered list must contain human-readable text between the square brackets.
-* Each item in the unordered list must contain a minimum of text besides the link or xref.
+* Each item in the unordered list must contain a minimum of text beside the link or xref.
 * Use `.Additional resources` formatting for an Additional resources section when it applies to a section within a topic. For example:
 +
 [source,adoc]
